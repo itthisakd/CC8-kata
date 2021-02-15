@@ -8,6 +8,12 @@ describe('Palindrome', function() {
   it(`should return false when input 1011`, function() {
     expect(isPalindrome(1011)).toBe(false)
   })
+  it(`should return true when input 11011`, function() {
+    expect(isPalindrome(11011)).toBe(true)
+  })
+  it(`should return true when input 110011`, function() {
+    expect(isPalindrome(110011)).toBe(true)
+  })
   it(`should return true when input 36063`, function() {
     expect(isPalindrome(36063)).toBe(true)
   })
