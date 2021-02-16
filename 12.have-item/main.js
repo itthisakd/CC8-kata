@@ -31,7 +31,9 @@ console.log(findItem_forEach([1, 2, 3, 4, 5], 9))
  */
 function findItem_reduce(items, keyword) {
   // Implement by Array.prototype.reduce()
-
+  // let arr = [];
+  // items.reduce((acc, cur) => cur == keyword);
+  // return arr.length > 0
 }
 
 /**
@@ -42,7 +44,7 @@ function findItem_reduce(items, keyword) {
  */
 function findItem_filter(items, keyword) {
   // Implement by Array.prototype.filter()
-
+  return items.filter(item => item == keyword).length > 0 
 }
 
 /**
@@ -53,7 +55,7 @@ function findItem_filter(items, keyword) {
  */
 function findItem_some(items, keyword) {
   // Implement by Array.prototype.some()
-
+  return items.some((el) => el == keyword)
 }
 
 module.exports = {

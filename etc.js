@@ -1,8 +1,6 @@
-let salaries = {
-  John: 100,
-  Ann: 160,
-  Pete: 130
-}
+const numbers = [2, 3, 5, 7, 11, 13];
 
-const sum = (obj) => Object.values(obj).reduce((acc, curr) => acc + curr, 0)
-console.log(sum(salaries))
+let newNumbers = []
+numbers.forEach((num) => newNumbers.push(num * num))
+
+console.log(newNumbers)
